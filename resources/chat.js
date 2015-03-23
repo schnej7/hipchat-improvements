@@ -1,7 +1,14 @@
-
 window.onerror = function (error, url, line) {
     osxConnector.logJavascriptError_('Line ' + line + ': ' + error);
 };
+
+function highlightName(messageText) {
+    highlights.every(function(element, index, array) {
+        messageText = messageText.replace(new RegExp(element, "gi"), '<span class="myName">' + element + '</span>');
+        return true;
+    });
+    return messageText;
+}
 
 function replaceImageWithRetina(node) {
     var emotes = node.getElementsByTagName('IMG');
@@ -92,7 +99,7 @@ function addChatLine(blockId, className, body, messageId) {
     var newLine = document.createElement('p');
     newLine.id = messageId;
     newLine.className = className;
-    newLine.innerHTML = body;
+    newLine.innerHTML = highlightName(body);
     addLinkHandlers(newLine);
     currentBlock.appendChild(newLine);
     replaceImageWithRetina(newLine);

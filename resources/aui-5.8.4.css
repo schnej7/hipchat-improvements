@@ -821,7 +821,6 @@ aui-header {
   display: block;
 }
 .aui-header {
-  background: #205081;
   border-bottom: 1px solid #2e3d54;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1534,13 +1533,14 @@ body {
   color: #333333;
 }
 a {
-  color: #3572b0;
+  color: #2a6496;
   text-decoration: none;
 }
 a:focus,
 a:hover,
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
+  #df2626;
 }
 #footer .footer-body {
   color: #707070;

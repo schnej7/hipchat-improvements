@@ -3,6 +3,18 @@ html {
     -webkit-text-size-adjust: none;
 }
 
+.avatarCell {
+    width:100px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+img.avatar {
+    height:40px;
+    margin:0;
+    padding:0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +30,12 @@ li {
 }
 
 a {
-    color: #3572b0;
+    color: #2a6496;
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #df2626;
 }
 
 .systemMessage.green a {
@@ -56,7 +69,9 @@ table {
 	border-top: none;
 }
 .chatBlock.me+.chatBlock.me, .preview+.chatBlock.me {
-    border-top: 1px solid #ffffff;
+  border-top: 1px solid #EFEFEF;
+  color: #589442;
+  font-weight: bold;
 }
 .systemMessage.red,
 .systemMessage.green,
@@ -116,8 +131,9 @@ table {
 }
 
 .me {
-    background-color: #E1EAF4;
-	border-top:1px solid #FFFFFF;
+  background: #eee;
+  color: #589442;
+  font-weight: bold;
 }
 
 .them {
@@ -138,6 +154,25 @@ table {
 
 .messageBlock .monospace {
     font-family: monospace;
+}
+
+.messageBlock .myName {
+  padding: 2px;
+  color: #fff;
+  border-radius: 3px;
+  background: rgb(104,177,78); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(104,177,78,1) 0%, rgba(88,148,66,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(104,177,78,1)), color-stop(100%,rgba(88,148,66,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68b14e', endColorstr='#589442',GradientType=0 ); /* IE6-9 */
+}
+
+.me .messageBlock .msgText {
+  color: #589442;
+  font-weight: bold;
 }
 
 .messageBlock .msgText {
@@ -186,6 +221,9 @@ table {
 .nameBlock {
     vertical-align: top;
     text-align: right;
+    margin:0;
+    padding:0;
+    display:inline;
 }
 
 .nameBlock p {
@@ -202,11 +240,13 @@ table {
 }
 
 .me .nameBlock p {
-    color: #707070;
+    color: #589442;
+    font-weight: bold;
 }
 
 .me .nameBlock {
-    border-top-color: #F3F7FB;
+    color: #589442;
+    font-weight: bold;
 }
 /* Add padding to make up for the missing borders on name/message blocks */
 .infoBlock p {
@@ -302,7 +342,14 @@ p.timeBlock {
     color: #fff;
     padding: 1px 4px;
     border:none;
-    background: #3572b0;
+    background: rgb(104,177,78); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(104,177,78,1) 0%, rgba(88,148,66,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(104,177,78,1)), color-stop(100%,rgba(88,148,66,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(104,177,78,1) 0%,rgba(88,148,66,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68b14e', endColorstr='#589442',GradientType=0 ); /* IE6-9 */
 }
 
 .hexPreview {
