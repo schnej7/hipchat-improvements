@@ -27,5 +27,5 @@ REGEX=s#XXSERVER_URLXX#$HIPCHAT_SERVER#g
 sed -i.bak "$REGEX" build/chat-osx.js
 
 ## Copy files to where hipchat expects them
-cp build/*js  $HIPCHAT_RES
-cp build/*css $HIPCHAT_RES
+cp build/*js  "$HIPCHAT_RES"
+cp build/*css "$HIPCHAT_RES"
