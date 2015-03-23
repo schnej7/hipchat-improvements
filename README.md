@@ -1,4 +1,4 @@
-# Hipchat Modifications
+# Hipchat Improvements
 
 Includes:
 * Hilighting your name
