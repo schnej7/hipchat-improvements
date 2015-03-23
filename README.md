@@ -22,11 +22,11 @@ Download this repo
 
 If you have git installed:
 ```
-git clone https://github.com/schnej7/hipchat-modifications.git
+git clone https://github.com/schnej7/hipchat-improvements.git
 ```
 
 From a direct link:
-https://github.com/schnej7/hipchat-modifications/archive/master.zip
+https://github.com/schnej7/hipchat-improvements/archive/master.zip
 
 (make sure to unzip the file once it has downloaded)
 
@@ -36,7 +36,7 @@ From a terminal, cd to where you downloaded the repo
 
 If you direct downloaded:
 ```
-cd ~/Downloads/hipchat-modifications-master
+cd ~/Downloads/hipchat-improvements-master
 ```
 
 ### Step 3
