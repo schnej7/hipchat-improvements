@@ -5,6 +5,8 @@ Includes:
 * Font improvements
 * Avatars
 
+## Screenshot
+
 ![Example](/images/ExampleScreenShot.png)
 
 ## How to generate an Auth Token
