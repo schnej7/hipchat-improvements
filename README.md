@@ -5,6 +5,8 @@ Includes:
 * Font improvements
 * Avatars
 
+![Example](/images/ExampleScreenShot.png)
+
 ## How to generate an Auth Token
 
 This will be needed for later steps in the installation process
