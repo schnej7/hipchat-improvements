@@ -3,6 +3,7 @@ var username = "XXUSER_NAMEXX";
 var serverUrl = "XXSERVER_URLXX";
 var highlights = [];
 var allUsers = [];
+var allUsersMap = {};
 
 var responses = {};
 function httpGet(theUrl, callback)
@@ -22,12 +23,7 @@ function httpGet(theUrl, callback)
 }
 
 function findUser( display_name ) {
-    for( var i = 0; i < allUsers.length; i++ ) {
-        if ( allUsers[i].name == display_name ) {
-            return allUsers[i];
-        }
-    }
-    return null;
+    return allUsersMap[display_name];
 }
 
 function getAllUsers() {
@@ -39,6 +35,7 @@ function getAllUsers() {
                     var myuser = response.items[i];
                     highlights.push(myuser.name.split(" ")[0]);
                 }
+                allUsersMap[response.items[i].name] = response.items[i];
             }
         }
     );
